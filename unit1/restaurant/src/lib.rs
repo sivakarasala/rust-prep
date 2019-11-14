@@ -1,24 +1,12 @@
+mod front_of_house;
+
 use std::io::{self, Write};
 // use std::io;
 // use std::io:Write;
 
 use std::collections::*;
 
-pub mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist() {}
-
-        fn seat_at_table() {}
-    }
-
-    pub mod serving {
-        fn take_order() {}
-
-        pub fn serve_order() {}
-
-        fn take_payment() {}
-    }
-}
+// pub use crate::front_of_house::hosting;
 
 mod back_of_house {
     pub enum Appetizer {
