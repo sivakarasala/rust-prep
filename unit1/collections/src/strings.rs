@@ -39,4 +39,18 @@ pub fn string_type() {
     let s3 = String::from("shivaya");
     let s4 = s1 + &s2 + &s3;
     println!("s4 is {}", s4);
+
+    let hello = "Здравствуйте";
+
+    let s = &hello[0..4]; 
+       
+    // iterating over strings
+    for c in "नमस्ते".chars() {
+        println!("{}", c);
+    }
+
+    for c in "नमस्ते".bytes() {
+        println!("{}", c);
+    }
+
 }
